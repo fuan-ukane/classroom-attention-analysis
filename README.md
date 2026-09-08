@@ -35,10 +35,13 @@
 | 融合算法 | 加权融合 + 未知类别兜底 |
 
 ## 🏗️ 系统架构
+```mermaid
 flowchart LR
     A["React 前端<br/>四象限布局"] <-->|HTTP / JSON| B["Flask 后端<br/>RESTful API"]
     B -->|调用| C["姿态CNN+表情模型<br/>MTCNN人脸检测"]
     B -.-> D["SQLite"]
+```
+
 
 
 ## 📊 模型性能
